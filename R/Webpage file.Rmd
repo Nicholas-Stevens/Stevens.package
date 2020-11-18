@@ -1,0 +1,32 @@
+---
+title: "Tutorial"
+author: "Nick Stevens"
+date: "11/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+devtools::install_github("stevensnick/package.name")
+```
+
+The next thing you need to do is load the package:
+
+```{r}
+library("packagename")
+```
+
+
+## Data prep for calculating basil area 
+
+Turning diameter data into basil area
+
+
+```{r}
+
+
+```

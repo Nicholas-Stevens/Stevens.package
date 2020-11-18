@@ -1,0 +1,24 @@
+Package:Stevens.package
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nick",
+           family = "Stevens",
+           role = c("aut", "cre"),
+           email = "Nicholas.stevens@selu.edu")
+Description: What the package does (one paragraph).
+Depends: 
+  R (>= 3.0.0) 
+Imports:
+  tidyverse, 
+  ggplot2 
+Suggests: 
+  Knitr, 
+  rmarkdown,
+  testthat,
+  assertthat,
+  rmarkdown
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
