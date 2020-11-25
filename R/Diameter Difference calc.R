@@ -12,12 +12,12 @@
 #' code:
 #' @example
 #' 
-diameter_diff_y2017_2018 <- function(data = diameters_2019,
-                                       diameter_2017 = diameter_2019$diameter_2017,
-                                       diameter_2018 = diameter_2019$diameter_2018)
+diameter_diff_y2017_2018 <- function(data = Diameters,
+                                       diameter_2017 = Diameters$diameter_2017,
+                                       diameter_2018 = Diameters$diameter_2018)
    {assertthat::assert_that(is.numeric(data$diameter_2017))
     assertthat::assert_that(is.numeric(data$diameter_2018))    
     diameter_diff_calc <- data %>% mutate(diameter_diff_calc = diameter_2018 - diameter_2017)
     return(diameter_diff_calc)}
 
-diameter_diff_y2017_2018(diameter_filetered, diameter_2017, diameter_2018)
+diameter_diff_y2017_2018(Diameters, diameter_2017, diameter_2018)

@@ -1,5 +1,5 @@
-Package:Stevens.package
-Title: What the Package Does (One Line, Title Case)
+Package: Stevens.package
+Title: Packages to calculate difference in Leaf Litter and Diameter and plot the Liner Model comparing the two.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Nick",
@@ -8,10 +8,12 @@ Authors@R:
            email = "Nicholas.stevens@selu.edu")
 Description: What the package does (one paragraph).
 Depends: 
-  R (>= 3.0.0) 
+  R (>= 4.0.0) 
 Imports:
   tidyverse, 
-  ggplot2 
+  ggplot2,
+  dplyr,
+  magrittr
 Suggests: 
   Knitr, 
   rmarkdown,
