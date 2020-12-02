@@ -1,3 +1,3 @@
 # Stevens Package
 ## Author: Nick Stevens
-### An R package for calculating basil area and differences of leaflitter and dimeters 
+### An R package for calculating differences of leaflitter and dimeters and plotting that using a liner model

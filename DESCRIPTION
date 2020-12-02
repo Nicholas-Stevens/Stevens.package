@@ -6,7 +6,15 @@ Authors@R:
            family = "Stevens",
            role = c("aut", "cre"),
            email = "Nicholas.stevens@selu.edu")
-Description: What the package does (one paragraph).
+Description: The purpose of this R package is to help calculate the 
+             differences in diameters measurements and leaf litter weights
+             across multiple years of collected field site data. 
+             These differences can help one understand and predict ecosystem
+             health and productivity by looking at yearly diameter increases
+             or a change in leaf litter biomass. This package can also take 
+             this information and plot it using a liner model to better help 
+             understand the relationship between rates of diameter increase 
+             and leaf litter biomass. 
 Depends: 
   R (>= 4.0.0) 
 Imports:
