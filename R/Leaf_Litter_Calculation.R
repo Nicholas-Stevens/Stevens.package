@@ -6,6 +6,7 @@
 #' @param Y2019 year 2019 leaf litter weights (numeric, no default)
 #' @return difference between yearly leaf litter weights (numeric)
 #' @importFrom assertthat assert_that
+#' 
 #' @export
 #'
 
