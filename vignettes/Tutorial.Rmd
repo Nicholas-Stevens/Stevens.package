@@ -25,18 +25,19 @@ library(Stevens.package)
 
 The purpose of this package is to allow the user to quickly find the difference between both yearly diameter measurements by site and yearly leaf litter biomass totals by site. This package will also allow the user to plot the linear model of biomass totals against the average diameter difference across the same site by each year. 
 
-## Types of Data used In this package
+## Types of Data Used In this Package
 
 All data used in this package will be in the form of a simple data table with the years it was collected going across the top row and the site, species, and then the data going down the columns in that order.  
 
-## Data prepration for calculating diameter difference
+## Data Prepration for Calculating Diameter Difference
 
 Before we start analyzing data we first need to make sure all the headers are labeled correctly and that you have the data loaded in as a .csv file. All data that you read in must have column headers that are non numeric going across the first row and sites and species going down the first columns.Note that this function will only calculate the difference between columns not rows. This may seem like an easy calculation, but when working with a massive data set that spans multiple years, sites, and species this function can save the user a lot of time. 
 
 As the package name states this first function is for finding the difference between diameter measurements across years of collected diameter measurements. This is done by first telling the function what data set you wish to use then telling it which two years you wish to find the difference between. The output will be in the form of a data table with a new column titled diameter_diff_calc or whatever you decided to declare the output name to be.  
 
-Load in packages and install sample data
-```{r}
+Load In Packages and Install Sample Diameter Data
+
+```{r eval=FALSE}
 
 library(tidyverse)
 library(dplyr)
@@ -44,38 +45,40 @@ library(dplyr)
 Diameters <- read.csv("inst/extdata/Diameters_2019.csv")
 ```
 
-```{r}
+```{r eval=FALSE}
 
 diameter_diff_y2017_2018(Diameters, diameter_2017, diameter_2018)
 
 ```
 
-## Data prepration for calculating Leaf Litter difference
+## Data Prepration for Calculating Leaf Litter Difference
 
 In order to begin analyzing data we first need to make sure all headers are non numeric and that the file is saved and read in as a .csv file. This function works much like the diameter difference function above. All data that you read in must have column headers that are non numeric going across the first row and sites and species going down the first columns.Note that this function will only calculate the difference between columns not rows. 
 
 As the package name states this function is for finding the difference between leaf litter biomass measurements across years of collected diameter measurements. This is done by first telling the function what data set you wish to use then telling it which two years you wish to find the difference between. The output will be in the form of a data table with a new column titled leaf_diff_calc or whatever you decided to declare the output name to be. 
 
-# Install the sample data
-```{r}
+Install the Biomass Sample Data
 
-Leaf_litter_filtered <- read.csv("inst/extdata/leaf_litter_filtered.csv")
+```{r eval=FALSE}
+
+Leaf_litter_filtered <- read.csv("inst/extdata/Leaf_litter_filtered.csv")
 
 ```
 
-```{r}
+```{r eval=FALSE}
 leaf_diff_y2017_2018 <- function(Leaf_litter_filtered, Y2017, Y2018)
   
 ```
 
 
-## Plotting the linear model of leaf litter collected per year by diameter avg per year
+## Plotting the Linear Model of Leaf Litter Collected Per Year by Diameter Average Per Year
 
 The last function in this package is just a simple plot of a linear model to help the user better visualize the data they just manipulated. Here, we would expect to see some sort of relationship between larger diameter increases and larger leaf litter biomass collections. However, conditions in a site can change from year to year and some years we see little to no growth at all or a loss in leaf litter overall biomasses. This change in the data from year to year is normal and represents the possible environmental factors such as drought, hurricanes or in this case caterpillar herbivory.     
 
 
-# Install the sample data
-```{r}
+Install the Sample Combined Average Data
+
+```{r eval=FALSE}
 
 library(ggplot2)
 
@@ -83,7 +86,7 @@ leaf_litter_and_diameter_combined_avg <- read.csv("inst/extdata/leaf_litter_and_
 
 ```
 
-```{r}
+```{r eval=FALSE}
 
 plot_lm(leaf_litter_and_diameter_combined_avg, diameter_2017_avg, Y2017)
 

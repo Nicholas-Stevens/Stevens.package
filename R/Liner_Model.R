@@ -10,7 +10,7 @@
 #'  
 
 plot_lm <- function (leaf_litter_data){
-ggplot(leaf_litter_and_diameter_combined_avg, aes(x = diameter_2017_avg, y = Y2017))
+ggplot(leaf_litter_and_diameter_combined_avg, aes(x = diameter_2017_avg, y = Y2017))+
 geom_point(size = 0.5) +
 geom_smooth(method = "lm",
               color = "green",
