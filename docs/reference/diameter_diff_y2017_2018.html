@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Calculates the Leaf litter difference across years of collected leaflitter weights(g) — leaf_diff_y2017_2018 • Stevens.package</title>
+<title>Calculates diameter difference from tree species diameters and finds difference between years — diameter_diff_y2017_2018 • Stevens.package</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Calculates the Leaf litter difference across years of collected leaflitter weights(g) — leaf_diff_y2017_2018" />
-<meta property="og:description" content="Calculates the Leaf litter difference across years of collected leaflitter weights(g)" />
+<meta property="og:title" content="Calculates diameter difference from tree species diameters and finds difference between years — diameter_diff_y2017_2018" />
+<meta property="og:description" content="Calculates diameter difference from tree species diameters and finds difference between years" />
 
 
 
@@ -115,41 +115,41 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Calculates the Leaf litter difference across years of collected leaflitter weights(g)</h1>
+    <h1>Calculates diameter difference from tree species diameters and finds difference between years</h1>
     
-    <div class="hidden name"><code>leaf_diff_y2017_2018.Rd</code></div>
+    <div class="hidden name"><code>diameter_diff_y2017_2018.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Calculates the Leaf litter difference across years of collected leaflitter weights(g)</p>
+    <p>Calculates diameter difference from tree species diameters and finds difference between years</p>
     </div>
 
-    <pre class="usage"><span class='fu'>leaf_diff_y2017_2018</span><span class='op'>(</span>
-  data <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span>,
-  Y2017 <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span><span class='op'>$</span><span class='va'>Y2017</span>,
-  Y2018 <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span><span class='op'>$</span><span class='va'>Y2018</span>
+    <pre class="usage"><span class='fu'>diameter_diff_y2017_2018</span><span class='op'>(</span>
+  data <span class='op'>=</span> <span class='va'>Diameters</span>,
+  diameter_2017 <span class='op'>=</span> <span class='va'>Diameters</span><span class='op'>$</span><span class='va'>diameter_2017</span>,
+  diameter_2018 <span class='op'>=</span> <span class='va'>Diameters</span><span class='op'>$</span><span class='va'>diameter_2018</span>
 <span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>Y2017</th>
-      <td><p>year 2017 leaf litter weights (numeric, no default)</p></td>
+      <th>diameter_2017</th>
+      <td><p>yearly diameter measurement for 2017 (numeric, no default)</p></td>
     </tr>
     <tr>
-      <th>Y2018</th>
-      <td><p>year 2018 leaf litter weights (numeric, no default)</p></td>
+      <th>diameter_2018</th>
+      <td><p>yearly diameter measurement for 2018 (numeric, no default)</p></td>
     </tr>
     <tr>
-      <th>Leaf_litter_filtered</th>
-      <td><p>name of data table (tibble, no default)</p></td>
+      <th>Diameters</th>
+      <td><p>name of data table used to calculate diameter difference</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>difference between yearly leaf litter weights (numeric)</p>
+    <p>differences between yearly diameters (data frame)</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

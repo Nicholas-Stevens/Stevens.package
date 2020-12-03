@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Calculates the Leaf litter difference across years of collected leaflitter weights(g) — leaf_diff_y2017_2018 • Stevens.package</title>
+<title>Makes a linear model comparing average diameters and leaf litter weights across the same sites over a number of years — plot_lm • Stevens.package</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Calculates the Leaf litter difference across years of collected leaflitter weights(g) — leaf_diff_y2017_2018" />
-<meta property="og:description" content="Calculates the Leaf litter difference across years of collected leaflitter weights(g)" />
+<meta property="og:title" content="Makes a linear model comparing average diameters and leaf litter weights across the same sites over a number of years — plot_lm" />
+<meta property="og:description" content="Makes a linear model comparing average diameters and leaf litter weights across the same sites over a number of years" />
 
 
 
@@ -115,41 +115,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Calculates the Leaf litter difference across years of collected leaflitter weights(g)</h1>
+    <h1>Makes a linear model comparing average diameters and leaf litter weights across the same sites over a number of years</h1>
     
-    <div class="hidden name"><code>leaf_diff_y2017_2018.Rd</code></div>
+    <div class="hidden name"><code>plot_lm.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Calculates the Leaf litter difference across years of collected leaflitter weights(g)</p>
+    <p>Makes a linear model comparing average diameters and leaf litter weights across the same sites over a number of years</p>
     </div>
 
-    <pre class="usage"><span class='fu'>leaf_diff_y2017_2018</span><span class='op'>(</span>
-  data <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span>,
-  Y2017 <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span><span class='op'>$</span><span class='va'>Y2017</span>,
-  Y2018 <span class='op'>=</span> <span class='va'>Leaf_litter_filtered</span><span class='op'>$</span><span class='va'>Y2018</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>plot_lm</span><span class='op'>(</span><span class='va'>leaf_litter_data</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
+      <th>Leaf_liter_and_diameter_combined_avg</th>
+      <td><p>name of data set (tibble, no default)</p></td>
+    </tr>
+    <tr>
+      <th>diameter_2017_avg</th>
+      <td><p>avg diameter of two species of trees per site (numeric, no default)</p></td>
+    </tr>
+    <tr>
       <th>Y2017</th>
-      <td><p>year 2017 leaf litter weights (numeric, no default)</p></td>
-    </tr>
-    <tr>
-      <th>Y2018</th>
-      <td><p>year 2018 leaf litter weights (numeric, no default)</p></td>
-    </tr>
-    <tr>
-      <th>Leaf_litter_filtered</th>
-      <td><p>name of data table (tibble, no default)</p></td>
+      <td><p>avg leaf litter weight across two species and multiple sites (numeric, no default)</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>difference between yearly leaf litter weights (numeric)</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
